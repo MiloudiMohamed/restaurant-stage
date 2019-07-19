@@ -80,17 +80,14 @@ nav h1 a {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 640px) {
-    nav h1 a {
-      letter-spacing: 10px;
-      font-size: inherit;
-    }
+#breadcrumb {
+  background-color: #f3f3f3;
+  width: 100%;
 }
 
-#breadcrumb {
+#breadcrumb ul {
     padding: 10px 40px 16px;
     list-style: none;
-    background-color: #eee;
     font-size: 17px;
     margin: 0;
 }
@@ -361,6 +358,13 @@ nav h1 a {
 /* Media queries */
 
 @media screen and (min-width: 640px) {
+    nav h1 a {
+      letter-spacing: 10px;
+      font-size: inherit;
+    }
+}
+
+@media screen and (min-width: 640px) {
   #restaurants-list li {
     width: 45%;
   }
@@ -403,7 +407,7 @@ nav h1 a {
   }
 
   #breadcrumb {
-    width: calc(53% - 80px);
+    width: calc(59% - 80px);
   }
 
   .inside #footer {
